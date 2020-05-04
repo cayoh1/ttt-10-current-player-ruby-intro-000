@@ -14,9 +14,13 @@ end
 def current_player(board)
 	#even return x else return o
 	symbol = ""
-	if turn_count(board) % 2 == 0
+	# if turn_count(board) % 2 == 0
+	# 	symbol = "X"
+	# elsif turn_count(board) % 2 != 0
+	# 	symbol = "O"
+	if turn_count(board).even?
 		symbol = "X"
-	elsif turn_count(board) % 2 != 0
+	elsif turn_count(board).odd?
 		symbol = "O"
 	end
 	return symbol
