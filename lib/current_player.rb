@@ -12,7 +12,7 @@ def turn_count(board)
 end
 
 def current_player(board)
-	#even return x else return o 
+	#even return x else return o
 	symbol = ""
 	if turn_count(board) % 2 == 0
 		symbol = "X"
